@@ -11,6 +11,18 @@
 		BDD9761A28373B220063B829 /* Stateful.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD9760F28373B220063B829 /* Stateful.framework */; };
 		BDD9761F28373B220063B829 /* StatefulTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD9761E28373B220063B829 /* StatefulTests.swift */; };
 		BDD9762028373B220063B829 /* Stateful.h in Headers */ = {isa = PBXBuildFile; fileRef = BDD9761228373B220063B829 /* Stateful.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDD9762A28373B300063B829 /* StateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD9762928373B300063B829 /* StateMachine.swift */; };
+		BDD9762C28373D750063B829 /* Emptiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD9762B28373D750063B829 /* Emptiable.swift */; };
+		BDD9762E28373DD60063B829 /* StateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD9762D28373DD60063B829 /* StateViewController.swift */; };
+		BDD9763128374FC40063B829 /* StateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD9763028374FC40063B829 /* StateView.swift */; };
+		BDD976342837514D0063B829 /* Lazy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD976332837514D0063B829 /* Lazy.swift */; };
+		BDD97637283753B50063B829 /* ContentBindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD97636283753B50063B829 /* ContentBindable.swift */; };
+		BDD97639283753CC0063B829 /* Scope.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD97638283753CC0063B829 /* Scope.swift */; };
+		BDD9763C2838005D0063B829 /* EmptyContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD9763B2838005D0063B829 /* EmptyContentView.swift */; };
+		BDD9763E283805D50063B829 /* StatefulViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD9763D283805D50063B829 /* StatefulViewModel.swift */; };
+		BDD9764128380C430063B829 /* StateMachine+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD9764028380C430063B829 /* StateMachine+Combine.swift */; };
+		BDD97643283817AE0063B829 /* StatefulView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD97642283817AE0063B829 /* StatefulView.swift */; };
+		BDD97646283819190063B829 /* StatefulViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD97645283819190063B829 /* StatefulViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +41,18 @@
 		BDD9761328373B220063B829 /* Stateful.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Stateful.docc; sourceTree = "<group>"; };
 		BDD9761928373B220063B829 /* StatefulTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StatefulTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDD9761E28373B220063B829 /* StatefulTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatefulTests.swift; sourceTree = "<group>"; };
+		BDD9762928373B300063B829 /* StateMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateMachine.swift; sourceTree = "<group>"; };
+		BDD9762B28373D750063B829 /* Emptiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emptiable.swift; sourceTree = "<group>"; };
+		BDD9762D28373DD60063B829 /* StateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateViewController.swift; sourceTree = "<group>"; };
+		BDD9763028374FC40063B829 /* StateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateView.swift; sourceTree = "<group>"; };
+		BDD976332837514D0063B829 /* Lazy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lazy.swift; sourceTree = "<group>"; };
+		BDD97636283753B50063B829 /* ContentBindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentBindable.swift; sourceTree = "<group>"; };
+		BDD97638283753CC0063B829 /* Scope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scope.swift; sourceTree = "<group>"; };
+		BDD9763B2838005D0063B829 /* EmptyContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyContentView.swift; sourceTree = "<group>"; };
+		BDD9763D283805D50063B829 /* StatefulViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatefulViewModel.swift; sourceTree = "<group>"; };
+		BDD9764028380C430063B829 /* StateMachine+Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StateMachine+Combine.swift"; sourceTree = "<group>"; };
+		BDD97642283817AE0063B829 /* StatefulView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatefulView.swift; sourceTree = "<group>"; };
+		BDD97645283819190063B829 /* StatefulViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatefulViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +95,12 @@
 		BDD9761128373B220063B829 /* Stateful */ = {
 			isa = PBXGroup;
 			children = (
-				BDD9761228373B220063B829 /* Stateful.h */,
 				BDD9761328373B220063B829 /* Stateful.docc */,
+				BDD9761228373B220063B829 /* Stateful.h */,
+				BDD97632283751430063B829 /* PropertyWrapper */,
+				BDD97635283753AB0063B829 /* Protocol */,
+				BDD9763F28380C350063B829 /* StateMachine */,
+				BDD9763A2837FFFB0063B829 /* View */,
 			);
 			path = Stateful;
 			sourceTree = "<group>";
@@ -83,6 +111,54 @@
 				BDD9761E28373B220063B829 /* StatefulTests.swift */,
 			);
 			path = StatefulTests;
+			sourceTree = "<group>";
+		};
+		BDD97632283751430063B829 /* PropertyWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				BDD976332837514D0063B829 /* Lazy.swift */,
+			);
+			path = PropertyWrapper;
+			sourceTree = "<group>";
+		};
+		BDD97635283753AB0063B829 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				BDD97644283819070063B829 /* Stateful */,
+				BDD97636283753B50063B829 /* ContentBindable.swift */,
+				BDD9762B28373D750063B829 /* Emptiable.swift */,
+				BDD97638283753CC0063B829 /* Scope.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		BDD9763A2837FFFB0063B829 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BDD9763028374FC40063B829 /* StateView.swift */,
+				BDD9762D28373DD60063B829 /* StateViewController.swift */,
+				BDD9763B2838005D0063B829 /* EmptyContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BDD9763F28380C350063B829 /* StateMachine */ = {
+			isa = PBXGroup;
+			children = (
+				BDD9762928373B300063B829 /* StateMachine.swift */,
+				BDD9764028380C430063B829 /* StateMachine+Combine.swift */,
+			);
+			path = StateMachine;
+			sourceTree = "<group>";
+		};
+		BDD97644283819070063B829 /* Stateful */ = {
+			isa = PBXGroup;
+			children = (
+				BDD97642283817AE0063B829 /* StatefulView.swift */,
+				BDD9763D283805D50063B829 /* StatefulViewModel.swift */,
+				BDD97645283819190063B829 /* StatefulViewController.swift */,
+			);
+			path = Stateful;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,7 +270,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDD9764128380C430063B829 /* StateMachine+Combine.swift in Sources */,
+				BDD9763E283805D50063B829 /* StatefulViewModel.swift in Sources */,
+				BDD97639283753CC0063B829 /* Scope.swift in Sources */,
+				BDD9762E28373DD60063B829 /* StateViewController.swift in Sources */,
+				BDD97643283817AE0063B829 /* StatefulView.swift in Sources */,
+				BDD9763C2838005D0063B829 /* EmptyContentView.swift in Sources */,
+				BDD976342837514D0063B829 /* Lazy.swift in Sources */,
+				BDD97637283753B50063B829 /* ContentBindable.swift in Sources */,
+				BDD9762C28373D750063B829 /* Emptiable.swift in Sources */,
+				BDD97646283819190063B829 /* StatefulViewController.swift in Sources */,
+				BDD9763128374FC40063B829 /* StateView.swift in Sources */,
 				BDD9761428373B220063B829 /* Stateful.docc in Sources */,
+				BDD9762A28373B300063B829 /* StateMachine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +428,7 @@
 		BDD9762428373B220063B829 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -350,6 +439,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -368,6 +458,7 @@
 		BDD9762528373B220063B829 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -378,6 +469,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -396,6 +488,7 @@
 		BDD9762728373B220063B829 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PGUD5RWNFH;
@@ -412,6 +505,7 @@
 		BDD9762828373B220063B829 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PGUD5RWNFH;
