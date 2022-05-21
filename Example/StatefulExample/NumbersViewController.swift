@@ -18,6 +18,7 @@ final class NumbersView: UIStackView, ContentBindable {
             numbers.map {
                 let label = UILabel()
                 label.text = "\($0)"
+                label.setContentHuggingPriority(.required, for: .vertical)
                 return label
             }
             .forEach(addArrangedSubview)
@@ -44,10 +45,10 @@ final class NumbersViewModel: StatefulViewModel {
     var state = CurrentValueSubject<StateMachine<[Int], Error>, Never>()
 
     func loadContent(_ completion: @escaping (Result<[Int], Error>) -> Void) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds((0 ... 3).randomElement()!)) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1)) {
             switch (0 ... 100).randomElement()! {
-            case let i where (0 ... 50).contains(i):
-                completion(.success(Bool.random() ? [] : Array(0 ... i)))
+            case let i where (0 ... 75).contains(i):
+                completion(.success(Bool.random() ? [] : [1, 2, 3, 4, 5]))
             default:
                 completion(.failure(.example))
             }
@@ -61,9 +62,11 @@ final class NumbersViewController: EmptiableStateViewController<NumbersView, Num
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
+        title = "Numbers"
         emptyContentMessage = .init(icon: UIImage(systemName: "doc.fill"), message: "No numbers loaded.")
         contentView.axis = .vertical
         contentView.alignment = .center
+        contentView.distribution = .equalSpacing
         contentView.spacing = 8
     }
 }

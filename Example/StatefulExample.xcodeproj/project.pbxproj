@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD39E3C72838845200C482E8 /* Stateful in Frameworks */ = {isa = PBXBuildFile; productRef = BD39E3C62838845200C482E8 /* Stateful */; };
 		BDD97656283842040063B829 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD97655283842040063B829 /* AppDelegate.swift */; };
 		BDD97658283842040063B829 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD97657283842040063B829 /* SceneDelegate.swift */; };
 		BDD9765A283842040063B829 /* NumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD97659283842040063B829 /* NumbersViewController.swift */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD39E3C42838821300C482E8 /* Stateful */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Stateful; path = ..; sourceTree = "<group>"; };
 		BDD97652283842040063B829 /* StatefulExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StatefulExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDD97655283842040063B829 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDD97657283842040063B829 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -22,7 +24,6 @@
 		BDD9765E283842050063B829 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDD97661283842050063B829 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDD97663283842050063B829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BDF7AE752838703700481CDB /* Stateful */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Stateful; path = ..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,18 +31,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD39E3C72838845200C482E8 /* Stateful in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD39E3C32838821300C482E8 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				BD39E3C42838821300C482E8 /* Stateful */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		BD39E3C52838845200C482E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BDD97649283842030063B829 = {
 			isa = PBXGroup;
 			children = (
-				BDF7AE742838703700481CDB /* Packages */,
+				BD39E3C32838821300C482E8 /* Packages */,
 				BDD97654283842040063B829 /* StatefulExample */,
 				BDD97653283842040063B829 /* Products */,
+				BD39E3C52838845200C482E8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,14 +84,6 @@
 			path = StatefulExample;
 			sourceTree = "<group>";
 		};
-		BDF7AE742838703700481CDB /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				BDF7AE752838703700481CDB /* Stateful */,
-			);
-			name = Packages;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -90,6 +100,9 @@
 			dependencies = (
 			);
 			name = StatefulExample;
+			packageProductDependencies = (
+				BD39E3C62838845200C482E8 /* Stateful */,
+			);
 			productName = StatefulExample;
 			productReference = BDD97652283842040063B829 /* StatefulExample.app */;
 			productType = "com.apple.product-type.application";
@@ -354,6 +367,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BD39E3C62838845200C482E8 /* Stateful */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Stateful;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BDD9764A283842030063B829 /* Project object */;
 }
