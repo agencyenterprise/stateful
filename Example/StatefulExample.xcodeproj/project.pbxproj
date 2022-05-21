@@ -22,6 +22,7 @@
 		BDD9765E283842050063B829 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDD97661283842050063B829 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDD97663283842050063B829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDF7AE752838703700481CDB /* Stateful */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Stateful; path = ..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +39,7 @@
 		BDD97649283842030063B829 = {
 			isa = PBXGroup;
 			children = (
+				BDF7AE742838703700481CDB /* Packages */,
 				BDD97654283842040063B829 /* StatefulExample */,
 				BDD97653283842040063B829 /* Products */,
 			);
@@ -62,6 +64,14 @@
 				BDD97663283842050063B829 /* Info.plist */,
 			);
 			path = StatefulExample;
+			sourceTree = "<group>";
+		};
+		BDF7AE742838703700481CDB /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				BDF7AE752838703700481CDB /* Stateful */,
+			);
+			name = Packages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

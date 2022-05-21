@@ -5,6 +5,8 @@
 //  Created by Lucas Assis Rodrigues on 5/19/22.
 //
 
+import Foundation
+
 // MARK: - StateMachine
 
 /// State machine that handles content, past content, and errors.
