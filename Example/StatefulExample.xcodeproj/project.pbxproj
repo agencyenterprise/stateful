@@ -12,40 +12,7 @@
 		BDD9765A283842040063B829 /* NumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD97659283842040063B829 /* NumbersViewController.swift */; };
 		BDD9765F283842050063B829 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDD9765E283842050063B829 /* Assets.xcassets */; };
 		BDD97662283842050063B829 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD97660283842050063B829 /* LaunchScreen.storyboard */; };
-		BDD976732838483E0063B829 /* Stateful.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD97670283842590063B829 /* Stateful.framework */; };
-		BDD976742838483E0063B829 /* Stateful.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BDD97670283842590063B829 /* Stateful.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		BDD9766F283842590063B829 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BDD9766A283842590063B829 /* Stateful.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BDD9760F28373B220063B829;
-			remoteInfo = Stateful;
-		};
-		BDD97671283842590063B829 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BDD9766A283842590063B829 /* Stateful.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BDD9761928373B220063B829;
-			remoteInfo = StatefulTests;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		BDD976752838483E0063B829 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				BDD976742838483E0063B829 /* Stateful.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BDD97652283842040063B829 /* StatefulExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StatefulExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,7 +22,6 @@
 		BDD9765E283842050063B829 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDD97661283842050063B829 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDD97663283842050063B829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BDD9766A283842590063B829 /* Stateful.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Stateful.xcodeproj; path = ../Stateful/Stateful.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +29,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDD976732838483E0063B829 /* Stateful.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,7 +40,6 @@
 			children = (
 				BDD97654283842040063B829 /* StatefulExample */,
 				BDD97653283842040063B829 /* Products */,
-				BDD97669283842590063B829 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,23 +64,6 @@
 			path = StatefulExample;
 			sourceTree = "<group>";
 		};
-		BDD97669283842590063B829 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BDD9766A283842590063B829 /* Stateful.xcodeproj */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BDD9766B283842590063B829 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				BDD97670283842590063B829 /* Stateful.framework */,
-				BDD97672283842590063B829 /* StatefulTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -127,7 +74,6 @@
 				BDD9764E283842040063B829 /* Sources */,
 				BDD9764F283842040063B829 /* Frameworks */,
 				BDD97650283842040063B829 /* Resources */,
-				BDD976752838483E0063B829 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -164,35 +110,12 @@
 			mainGroup = BDD97649283842030063B829;
 			productRefGroup = BDD97653283842040063B829 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = BDD9766B283842590063B829 /* Products */;
-					ProjectRef = BDD9766A283842590063B829 /* Stateful.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				BDD97651283842040063B829 /* StatefulExample */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		BDD97670283842590063B829 /* Stateful.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Stateful.framework;
-			remoteRef = BDD9766F283842590063B829 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		BDD97672283842590063B829 /* StatefulTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = StatefulTests.xctest;
-			remoteRef = BDD97671283842590063B829 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		BDD97650283842040063B829 /* Resources */ = {
