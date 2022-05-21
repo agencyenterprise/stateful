@@ -113,6 +113,8 @@ public extension StateMachine {
     func receivingLoading() -> Self { .loading(content: content) }
     func receiving(content newContent: Content) -> Self { .content(content: newContent) }
     func receiving(error newError: Error) -> Self { .error(error: newError, content: content) }
+    
+    /// Completely drops current data and return a StateMachine on empty loading.
     func purgingContentAndError() -> Self { .loading(content: nil) }
 }
 

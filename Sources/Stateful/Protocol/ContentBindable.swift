@@ -9,7 +9,11 @@ import UIKit
 
 // MARK: - ContentBindable
 
+/// An entity that can receive content.
 public protocol ContentBindable: UIView {
     associatedtype Content
+        
+    /// Entry point to assing content to the entity.
+    /// - Parameter content: Content to be bound.
     func bind(content: Content)
 }

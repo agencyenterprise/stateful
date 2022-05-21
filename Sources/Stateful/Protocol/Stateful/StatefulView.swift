@@ -9,6 +9,7 @@ import UIKit
 
 // MARK: - StatefulView
 
+/// Represents a view who reacts to a `StateMachine`.
 public protocol StatefulView: ContentBindable where Content == StateMachine<ContentView.Content, Error> {
     associatedtype ContentView: ContentBindable
     associatedtype Error: Swift.Error
