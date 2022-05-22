@@ -18,7 +18,7 @@ public protocol StatefulViewModel: AnyObject {
     func loadContent(_ completion: @escaping (_ result: Result<Content, Error>) -> Void)
 }
 
-extension StatefulViewModel {
+public extension StatefulViewModel {
     func reload() {
         state.sendLoading()
         loadContent { [weak self] result in

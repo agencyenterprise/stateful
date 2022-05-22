@@ -15,9 +15,3 @@ public protocol Emptiable {
     /// Is the value empty.
     var isEmpty: Bool { get }
 }
-
-// MARK: - Emptiable + Equatable
-
-public extension Emptiable where Self: Equatable {
-    var isEmpty: Bool { self == .empty }
-}

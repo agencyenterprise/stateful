@@ -66,6 +66,8 @@
                 self.icon = icon
                 self.message = message
             }
+            
+            public var isEmpty: Bool { self == .empty }
         }
 
         func bind(content: Content) {

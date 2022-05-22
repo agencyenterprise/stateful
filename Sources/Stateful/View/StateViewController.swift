@@ -69,7 +69,7 @@
             protocolLoadView()
         }
 
-        public func received(state: State) {
+        open func received(state: State) {
             stateView.bind(content: state)
             if case let .error(error: error, content: content?) = state, !content.isEmpty {
                 self.received(errorWithContent: error)
