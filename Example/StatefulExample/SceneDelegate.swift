@@ -28,6 +28,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 }
 
+typealias Content = [Int]
+
 // MARK: - Array + Emptiable
 
 extension Array: Emptiable {

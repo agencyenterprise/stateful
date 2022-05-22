@@ -9,8 +9,6 @@ import Combine
 import Stateful
 import UIKit
 
-typealias Content = [Int]
-
 // MARK: - View
 
 final class View: UIStackView, ContentBindable {
@@ -48,7 +46,7 @@ final class ViewModel: StatefulViewModel {
         workItem = .init {
             switch (0 ... 100).randomElement()! {
             case let i where (0 ... 75).contains(i):
-                completion(.success(Bool.random() ? [] : [1, 2, 3, 4, 5]))
+                completion(.success(Bool.random() ? [] : Array(0 ... 100)))
             default:
                 completion(.failure(.example))
             }
@@ -57,7 +55,10 @@ final class ViewModel: StatefulViewModel {
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: workItem!)
     }
 
-    func purge() { state.purge() }
+    func purge() {
+        state.purge()
+        reload()
+    }
 }
 
 // MARK: - ViewController
